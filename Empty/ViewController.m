@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "FileUtils.h"
 #import "CustomCell.h"
 
 @interface ViewController () {
@@ -23,19 +22,19 @@
 -(id)init {
     self = [super init];
     if (self) {
-        dataArray = [FileUtils readPlist:@"data.plist"];
-        NSLog(@"%@", dataArray);
+        dataArray = [self readPlist];
     }
     return self;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     
     self.view.backgroundColor = [UIColor lightGrayColor];
     
-    listView = [[UITableView alloc] initWithFrame:self.view.bounds
+    listView = [[UITableView alloc] initWithFrame:CGRectMake(0, 20,
+                                                             self.view.bounds.size.width,
+                                                             self.view.bounds.size.height - 20)
                                             style:UITableViewStylePlain];
     listView.delegate = self;
     listView.dataSource = self;
@@ -94,8 +93,8 @@
     return cell;
 }
 
--(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+-(NSArray*)readPlist {
+    return [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"data" ofType:@"plist"]];
 }
 
 - (void)didReceiveMemoryWarning {

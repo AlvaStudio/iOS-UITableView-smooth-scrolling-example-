@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0BD08CB91D9124FE00C41D22 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BD08CB81D9124FE00C41D22 /* data.plist */; };
-		0BD08CBC1D91265D00C41D22 /* FileUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD08CBB1D91265D00C41D22 /* FileUtils.m */; };
 		0BD08CBF1D915BCB00C41D22 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD08CBE1D915BCB00C41D22 /* CustomCell.m */; };
 		0BE5F38F1C9EBEF20095FBAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5F38E1C9EBEF20095FBAB /* main.m */; };
 		0BE5F3921C9EBEF20095FBAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5F3911C9EBEF20095FBAB /* AppDelegate.m */; };
@@ -30,8 +29,6 @@
 
 /* Begin PBXFileReference section */
 		0BD08CB81D9124FE00C41D22 /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
-		0BD08CBA1D91265D00C41D22 /* FileUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUtils.h; sourceTree = "<group>"; };
-		0BD08CBB1D91265D00C41D22 /* FileUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileUtils.m; sourceTree = "<group>"; };
 		0BD08CBD1D915BCB00C41D22 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomCell.h; path = ../CustomCell.h; sourceTree = "<group>"; };
 		0BD08CBE1D915BCB00C41D22 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomCell.m; path = ../CustomCell.m; sourceTree = "<group>"; };
 		0BE5F3891C9EBEF20095FBAB /* Empty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Empty.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,8 +89,6 @@
 				0BD08CBD1D915BCB00C41D22 /* CustomCell.h */,
 				0BD08CBE1D915BCB00C41D22 /* CustomCell.m */,
 				0BD08CB81D9124FE00C41D22 /* data.plist */,
-				0BD08CBA1D91265D00C41D22 /* FileUtils.h */,
-				0BD08CBB1D91265D00C41D22 /* FileUtils.m */,
 				0BE5F3991C9EBEF20095FBAB /* Images.xcassets */,
 				0BE5F39B1C9EBEF20095FBAB /* LaunchScreen.xib */,
 				0BE5F38C1C9EBEF20095FBAB /* Supporting Files */,
@@ -232,7 +227,6 @@
 				0BE5F3951C9EBEF20095FBAB /* ViewController.m in Sources */,
 				0BE5F3921C9EBEF20095FBAB /* AppDelegate.m in Sources */,
 				0BE5F38F1C9EBEF20095FBAB /* main.m in Sources */,
-				0BD08CBC1D91265D00C41D22 /* FileUtils.m in Sources */,
 				0BD08CBF1D915BCB00C41D22 /* CustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

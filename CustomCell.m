@@ -19,7 +19,7 @@
         [self addSubview:iconView];
         
         titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-        titleLabel.font = [UIFont fontWithName:@"Arial" size:14];
+        titleLabel.font = [UIFont fontWithName:@"Arial" size:18];
         [self addSubview:titleLabel];
         
         descLabel = [[UILabel alloc] initWithFrame:CGRectZero];
@@ -35,10 +35,10 @@
     
     iconView.frame = CGRectMake(2, 2, self.bounds.size.height - 4, self.bounds.size.height - 4);
     
-    titleLabel.frame = CGRectMake(self.bounds.size.height - 4, 2,
+    titleLabel.frame = CGRectMake(self.bounds.size.height, 2,
                                   self.bounds.size.width - self.bounds.size.height - 4,
                                   (self.bounds.size.height - 4)/2);
-    descLabel.frame = CGRectMake(self.bounds.size.height - 4, self.bounds.size.height/2,
+    descLabel.frame = CGRectMake(self.bounds.size.height, self.bounds.size.height/2,
                                   self.bounds.size.width - self.bounds.size.height - 4,
                                   (self.bounds.size.height - 4)/2);
     
